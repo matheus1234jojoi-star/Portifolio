@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contato | Matheus Fernandes</title>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scene" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="index.html" class="pill">MF</a>
+  <ul class="pill">
+    <li><a href="index.html#inicio">Início</a></li>
+    <li><a href="index.html#sobre">Sobre</a></li>
+    <li><a href="index.html#servicos">Serviços</a></li>
+    <li><a href="index.html#habilidades">Habilidades</a></li>
+    <li><a href="index.html#projetos">Projetos</a></li>
+    <li><a href="contato.html" class="on">Contato</a></li>
+  </ul>
+  <a href="index.html" class="pill cta">Voltar</a>
+</header>
+
+<main class="glass contact">
+  <div class="live"><i></i> Contato direto</div>
+  <h1>Me mande uma mensagem</h1>
+  <p>Escolha um canal abaixo ou me mande uma mensagem.<br>Respondo rápido.</p>
+
+  
+  <a class="glass channel" href="https://wa.me/5531983154203" target="_blank" rel="noopener"><span class="ic">💬</span><div>WhatsApp<small>(31) 983154203</small></div></a>
+  <a class="glass channel" href="mailto:seuemail@exemplo.com"><span class="ic">✉️</span><div>E-mail<small>matheus1234jojoi@gmail.com</small></div></a>
+  <a class="glass channel" href="https://www.instagram.com/matheusxxyxi/" target="_blank" rel="noopener"><span class="ic">📷</span><div>Instagram<small>@matheusxxyxi</small></div></a>
+
+  <div class="or">OU ESCREVA PARA MIM</div>
+
+  <form id="form" novalidate>
+    <div class="col">
+      <div>
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" maxlength="60" autocomplete="name" placeholder="Seu nome completo">
+        <div class="err"></div>
+      </div>
+      <div>
+        <label for="tel">Telefone</label>
+        <input id="tel" name="tel" inputmode="numeric" maxlength="15" autocomplete="tel" placeholder="(00) 00000-0000">
+        <div class="err"></div>
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" maxlength="80" autocomplete="email" placeholder="voce@email.com">
+        <div class="err"></div>
+      </div>
+    </div>
+    <div class="msgbox">
+      <label for="msg">Mensagem</label>
+      <textarea id="msg" name="msg" maxlength="300" placeholder="Conte como posso ajudar"></textarea>
+      <div class="count" id="count">0 / 300</div>
+      <div class="err"></div>
+    </div>
+    <button class="btn send" type="submit">Enviar mensagem</button>
+    <div id="status" role="status"></div>
+  </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
